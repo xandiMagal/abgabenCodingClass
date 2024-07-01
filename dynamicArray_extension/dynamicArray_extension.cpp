@@ -1,9 +1,24 @@
-/*****************************************************************************************************************************
+/********************************************************************************************************************************************************************************
 * Name: 	    [Magerl]
 * Projekt: 	    [dynamicArray_extension]
 * Erstelldatum: [28.06.2024]
-* Beschreibung: [Kurze Beschreibung der Funktionalität]
-******************************************************************************************************************************/
+* Beschreibung: [Dieses Programm implementiert eine dynamische Datenstruktur namens DynamicItemArray, die Objekte speichert, die von der Schnittstelle IItem abgeleitet sind. 
+				 Es verwendet std::unique_ptr, um eine sichere Speicherverwaltung zu gewährleisten und das Risiko von Speicherlecks zu minimieren.
+				 
+				 DynamicItemArray-Klasse
+				 - Verwendet std::unique_ptr für automatische Speicherfreigabe
+				 - Verdoppelt die Kapazität bei Bedarf
+				 - Fügt neue Objekte zum Array hinzu
+				 - Ermöglicht sicheren Zugriff auf gespeicherte Objekte
+				 
+				 ItemA- und ItemB-Klassen:
+				 - Implementieren die IItem-Schnittstelle.
+				 - Bieten spezifische Methoden zur Werte- und Textdarstellung.
+				 
+				 Verwendung in der function-Funktion:
+				 - Fügt abwechselnd ItemA und ItemB zum Array hinzu
+				 - Gibt die textuelle Darstellung der gespeicherten Objekte auf der Konsole aus]
+*********************************************************************************************************************************************************************************/
 
 
 #include <sstream>
